@@ -1,0 +1,77 @@
+@import '../../global.scss';
+
+.calendar{
+  &__day-selected{
+    display: flex;
+  }
+
+  &__fulldate{
+    display: flex;
+    flex-direction: column;
+    color: $color-alternate;
+  }
+
+  &__day-btn{
+    border: 0;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: $color-regular;
+    color: $color-alternate;
+    &:hover{
+      cursor:pointer;
+      color: $color-regular-hover;
+    }
+  }
+
+  &__day-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color-alternate;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__day{
+    display: flex;
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  &__day-name{
+    font-size: 12px;
+    color: $color-alternate;
+  }
+
+  &__year-month{
+    font-size: 15px;
+    color: $color-alternate;    
+  }
+
+  &__head-days-wrap{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $color-alternate;
+  }
+
+  &__head-day{
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: $color-alternate;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  &__month-days{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(6, 35px); 
+    text-align:center;
+    font-size: 13px;
+  }
+}

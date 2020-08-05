@@ -1,0 +1,23 @@
+@import '../../global.scss';
+
+.day{
+  border-radius: 7px;
+  border: 0;
+  color: $color-alternate;
+  background-color: $color-regular;
+
+  &:hover{
+    cursor: pointer;
+    color: $color-regular;
+    background-color: $color-alternate;
+  }
+
+  &--selected{
+    color: $color-regular;
+    background-color: $color-alternate;
+  }
+
+  &--non-current{
+    color: #8bd7d6;
+  }
+}
